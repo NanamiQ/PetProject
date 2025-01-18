@@ -1,0 +1,15 @@
+{
+    "name": "dark/pet_project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.5",
+        "friendsofphp/php-cs-fixer": "^3.68",
+        "monolog/monolog": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dark\\PetProject\\": "src/"
+        }
+    }
+}
