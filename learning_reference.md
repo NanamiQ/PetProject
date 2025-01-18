@@ -7,8 +7,8 @@ git add -A - Добавить всё в текущей working directory в stag
 git config --global core.autocrlf false - чинит ошибку  LF will be replaced by CRLF the next time Git touches it
 echo ".idea" >> .gitignore - добавить папку или в файл git ignore
 git commit -m - коммит в ветку, всегда нужен первый коммит для создания ветки мастер
-git reset --hard - отмена изменений, пушей коммитов пулов и прочего, очень опасно
-git revert --<commit> - новый коммит с откатом изменения коммита
+git reset --hard - отмена изменений, пуш коммитов пулов и прочего, очень опасно
+git revert --<commit> - новый коммит с откатом изменения коммитов
 
 -- Docker секция
 
@@ -20,13 +20,15 @@ https://github.com/adv4000/docker/blob/master/DOCKER%20COMMANDS.txt
 
 docker ps -a - Список контейнеров? (разница между контейнером и образом)
 docker images - Список образов
-docker search {php} - Поиск по докер хабу образов
+docker search {php} - Поиск по докер хаб образов
 docker pull - Скачивание докер хаб образов
 docker run -it -p 1234:8080 {php} - запустить образ интерактивно, перенаправить порты и адрес (8080 станет 1234, будет 127.0.0.1:1234)? (разница интерактивно и на фоне)
 docker run -d - запустить образ процессом на фоне
 docker rm {php} - удалить контейнер (rmi - alias for rm)
 docker build -t name:v1 . (точка - локальный поиск файла)
 docker exec - провалится внутрь запушенного контейнера
+
+Docker compose - 
 
 ??docker up и down, описать
 
